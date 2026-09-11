@@ -22,7 +22,7 @@ requirements:
   host:
     - python
     - numpy >=2
-    - setuptools >=45
+    - setuptools >=77
     - wheel
     - cython
     - pip
@@ -35,6 +35,7 @@ requirements:
     - python
     - scipy
     - matplotlib-base
+    - pyyaml
     - cartopy
     - cmweather
     - netcdf4
@@ -55,7 +56,9 @@ tests:
 about:
   summary: Corrected Moments in Antenna Coordinates
   license: BSD-3-Clause
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - LICENSE_GPL.txt
   homepage: https://github.com/ARM-Development/cmac
 
 extra:
