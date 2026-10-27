@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.3.0
+  version: 0.4.0
 
 package:
   name: cmac
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/cmac/cmac-${{ version }}.tar.gz
-  sha256: 4b9a42cdaa8c264d77a5132101485144271962fae99f6b9d1b7c051014fba915
+  sha256: 364108624bd15a8deb67898f2888c4bc08713d08af44bd20ed2dc2be46d8d346
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
   host:
-    - python
+    - python 
     - numpy >=2
     - setuptools >=77
     - wheel
@@ -32,7 +32,7 @@ requirements:
     - wradlib
     - s3fs >=2021.11.0
   run:
-    - python
+    - python 
     - scipy
     - matplotlib-base
     - pyyaml
