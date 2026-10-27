@@ -2,7 +2,6 @@ schema_version: 1
 
 context:
   version: 0.4.0
-  python_min: 3.13
 
 package:
   name: cmac
@@ -21,7 +20,7 @@ requirements:
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
   host:
-    - python ${{ python_min }}.*
+    - python 
     - numpy >=2
     - setuptools >=77
     - wheel
@@ -33,7 +32,7 @@ requirements:
     - wradlib
     - s3fs >=2021.11.0
   run:
-    - python >=${{ python_min }}
+    - python 
     - scipy
     - matplotlib-base
     - pyyaml
@@ -51,9 +50,6 @@ tests:
   - python:
       imports:
         - cmac
-      python_version:
-        - ${{ python_min }}.*
-        - "*"
     script:
       - pip check
 
