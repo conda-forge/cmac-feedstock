@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.4.0"
+  version: "0.4.1"
 
 package:
   name: cmac
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/cmac/cmac-${{ version }}.tar.gz
-  sha256: 364108624bd15a8deb67898f2888c4bc08713d08af44bd20ed2dc2be46d8d346
+  sha256: 48c41e7a80a4c640653247f76e225633e463f552adf94cb9ebfb58caebb75e46
 
 build:
   number: 0
