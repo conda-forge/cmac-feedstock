@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/cmac/cmac-${{ version }}.tar.gz
-  sha256: 6cfe6f3dc7c2b52e2b09dbf6521706d772df216eb88cda3919
+  sha256: 6cfe6f3dc7c2b52e2b09dbf6521706d772df216eb88cda3919b3660f0b22cde0
 
 
 build:
